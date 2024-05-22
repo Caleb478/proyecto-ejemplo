@@ -1,0 +1,304 @@
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding-top: 70px;
+  margin: 0;
+  padding: 0;
+}
+
+/*header {
+  background-color: #3983fe;
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+*/
+.navbar {
+  padding: 0.5rem 1rem; /* Ajusta los valores de padding según tus preferencias */
+  background-color: #3983fe !important; /* Asegúrate de que el !important sobrescriba otros estilos */
+  height: 230px;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: black; /* Cambia el color del texto de los enlaces del menú */
+}
+
+.navbar-light .navbar-brand {
+  color: #fff; /* Cambia el color del texto del logotipo */
+}
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.form-control::placeholder {
+  font-size: 14px; /* Ajusta el tamaño de fuente según tus preferencias */
+}
+
+.form-control {
+  width: 200px; /* Ajusta el ancho según tus necesidades */
+}
+/*carrusel*/
+.carousel-item {
+  height: 500px; /* Ajusta la altura según tus necesidades */
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+/* Estilos del formulario */
+
+textarea.form-control {
+  resize: vertical;
+}
+
+.hero {
+  margin-bottom: 20px;
+  background-color: #f8f9fa;
+  padding: 50px;
+  text-align: center;
+}
+.hero h2 {
+  color: #333;
+  font-size: 32px;
+}
+
+.hero p {
+  color: #666;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+/*.servicios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  justify-items: center;
+}
+
+.servicio {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+.servicio h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.servicio p {
+  margin: 0;
+  font-size: 14px;
+}*/
+h1, h2 {
+  color: #333;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 50px;
+}
+
+.item {
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contacto {
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* footer */
+.footer {
+  background-color: #202020;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.footer-item {
+  margin-right: 0;
+}
+
+.footer-head {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.tags-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tags-list li {
+  background-color: #3a3a3a;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-item ul li {
+  margin-bottom: 10px;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.footer-bottom hr {
+  border: none;
+  border-top: 1px solid #444;
+  margin-bottom: 20px;
+}
+
+.footer-social a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 24px;
+  transition: color 0.3s;
+  display: inline-block;
+}
+
+.footer-social a svg {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-social a:hover {
+  color: #ccc;
+}
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+  /* Ajustar el contenedor principal */
+  .container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  /* Ajustar el pie de página */
+  .footer .container {
+    grid-template-columns: 1fr;
+  }
+}
+/* Estilos para dispositivos móviles */
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+  .servicios {
+    grid-template-columns: 1fr;
+  }
+
+  .servicio {
+    padding: 15px;
+  }
+
+  .servicio h3 {
+    font-size: 16px;
+  }
+
+  .servicio p {
+    font-size: 14px;
+  }
+}
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+  .doctor-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .doctor-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .doctor-info h3 {
+    font-size: 16px;
+  }
+
+  .doctor-info p {
+    font-size: 14px;
+  }
+}
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+  .contacto {
+    padding: 15px;
+  }
+}
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+  .btn-submit {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
