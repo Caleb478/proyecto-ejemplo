@@ -1,4 +1,4 @@
-/* Reset de estilos */
+/* estilos */
 * {
   margin: 0;
   padding: 0;
@@ -12,30 +12,17 @@ body {
   padding: 0;
 }
 
-/*header {
-  background-color: #3983fe;
-  color: #fff;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-header h1 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: #fff;
-}
-*/
 .navbar {
-  padding: 0.5rem 1rem; /* Ajusta los valores de padding según tus preferencias */
-  background-color: #3983fe !important; /* Asegúrate de que el !important sobrescriba otros estilos */
+  padding: 0.5rem 1rem;
+  background-color: #3983fe !important;
   height: 230px;
 }
 .navbar-light .navbar-nav .nav-link {
-  color: black; /* Cambia el color del texto de los enlaces del menú */
+  color: black; /*texto de los enlaces del menú */
 }
 
 .navbar-light .navbar-brand {
-  color: #fff; /* Cambia el color del texto del logotipo */
+  color: #fff; /*del texto del logotipo */
 }
 nav ul {
   list-style: none;
@@ -51,24 +38,12 @@ nav ul li a {
   text-decoration: none;
 }
 .form-control::placeholder {
-  font-size: 14px; /* Ajusta el tamaño de fuente según tus preferencias */
+  font-size: 14px; /* tamaño de fuente */
 }
 
 .form-control {
-  width: 200px; /* Ajusta el ancho según tus necesidades */
+  width: 200px;
 }
-/*carrusel*/
-.carousel-item {
-  height: 500px; /* Ajusta la altura según tus necesidades */
-}
-
-.carousel-item img {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-}
-/* Estilos del formulario */
-
 textarea.form-control {
   resize: vertical;
 }
@@ -90,6 +65,16 @@ textarea.form-control {
   margin-top: 20px;
 }
 
+/*carrusel*/
+.carousel-item {
+  height: 500px;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
 
 main {
   display: grid;
@@ -98,29 +83,6 @@ main {
   padding: 20px;
 }
 
-/*.servicios {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-  justify-items: center;
-}
-
-.servicio {
-  background-color: #f1f1f1;
-  padding: 20px;
-  text-align: center;
-}
-
-.servicio h3 {
-  margin: 10px 0;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.servicio p {
-  margin: 0;
-  font-size: 14px;
-}*/
 h1, h2 {
   color: #333;
 }
@@ -134,6 +96,15 @@ a {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
   padding: 50px;
+}
+.container .item {
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.container .item:hover {
+  transform: translateY(-5px);
 }
 
 .item {
@@ -204,7 +175,7 @@ ul {
 
 .footer-bottom hr {
   border: none;
-  border-top: 1px solid #444;
+  border-top: 1px solid #ffff;
   margin-bottom: 20px;
 }
 
@@ -224,21 +195,18 @@ ul {
 .footer-social a:hover {
   color: #ccc;
 }
-/* Estilos para dispositivos móviles */
+
+/* RESPONSIVO */
 @media (max-width: 767px) {
-  /* Ajustar el contenedor principal */
   .container {
     grid-template-columns: 1fr;
     padding: 20px;
   }
 
-  /* Ajustar el pie de página */
   .footer .container {
     grid-template-columns: 1fr;
   }
 }
-/* Estilos para dispositivos móviles */
-/* Estilos para dispositivos móviles */
 @media (max-width: 767px) {
   .servicios {
     grid-template-columns: 1fr;
@@ -256,7 +224,6 @@ ul {
     font-size: 14px;
   }
 }
-/* Estilos para dispositivos móviles */
 @media (max-width: 767px) {
   .doctor-grid {
     grid-template-columns: 1fr;
@@ -275,7 +242,6 @@ ul {
     font-size: 14px;
   }
 }
-/* Estilos para dispositivos móviles */
 @media (max-width: 767px) {
   h1 {
     font-size: 24px;
@@ -289,13 +255,11 @@ ul {
     font-size: 16px;
   }
 }
-/* Estilos para dispositivos móviles */
 @media (max-width: 767px) {
   .contacto {
     padding: 15px;
   }
 }
-/* Estilos para dispositivos móviles */
 @media (max-width: 767px) {
   .btn-submit {
     font-size: 14px;
