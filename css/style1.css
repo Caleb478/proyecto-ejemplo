@@ -1,68 +1,5 @@
-/* Estilos anteriores */
+/* Estilos */
 
-/*body {
-  font-family: Arial, sans-serif;
-  padding-top: 70px;
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  background-color: #3983fe;
-  color: #fff;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-header h1 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}*/
-
-/*.hero {
-  margin-bottom: 20px;
-  background-color: #f8f9fa;
-  padding: 50px;
-  text-align: center;
-}
-
-.hero h2 {
-  color: #333;
-  font-size: 32px;
-}
-
-.hero p {
-  color: #666;
-  font-size: 18px;
-  margin-top: 20px;
-}*/
-/*.navbar {
-  padding: 0.5rem 1rem; 
-  background-color: #3983fe;
-  height: 230px;
-}
-.navbar-light .navbar-nav .nav-link {
-  color: #fff; 
-}
-
-.navbar-light .navbar-brand {
-  color: #fff;
-}
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 10px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}*/
 .servicios {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -90,6 +27,17 @@ nav ul li a {
   margin: 0;
   font-size: 14px;
 }
+/*Estilo de cards*/
+.servicios .card {
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicios .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
 .container {
   max-width: 1200px;
@@ -97,51 +45,8 @@ nav ul li a {
   padding: 20px;
 }
 
-/*h1, h2 {
-  color: #333;
-}
 
-a {
-  color: #333;
-  text-decoration: none;
-}*/
-
-
-/* Nuevos estilos */
-
-/*.container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-  padding: 50px;
-}
-
-.item {
-  border: 1px solid #ddd;
-  padding: 20px;
-}
-
-.content {
-  margin-top: 20px;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-.form-control::placeholder {
-  font-size: 14px;
-}
-
-.form-control {
-  width: 200px;
-}
-
-textarea.form-control {
-  resize: vertical;
-}*/
-
-.btn-submit {
+/*.btn-submit {
   background-color: #007bff;
   color: #fff;
   font-size: 16px;
@@ -157,11 +62,9 @@ textarea.form-control {
 
 .btn-outline-primary{
   color: #fff;
-}
+}*/
 
 /*CSS PAGINA 2*/
-/* Section Title */
-
 
 /* Doctor Panel */
 .doctor-directory {
@@ -177,7 +80,7 @@ textarea.form-control {
 }
 
 .doctor-card {
-  background-color: #fff;
+  background-color: #DCF0F5;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   overflow: hidden;
@@ -185,10 +88,10 @@ textarea.form-control {
 
 .doctor-img {
   position: relative;
-  width: 350px; /* Ajusta el ancho deseado */
-  height: 420px; /* Ajusta la altura deseada */
+  width: 350px; 
+  height: 420px; 
   overflow: hidden;
-  margin: 0 auto; /* Centra horizontalmente */
+  margin: 0 auto; 
 }
 
 .doctor-img img {
@@ -229,7 +132,8 @@ textarea.form-control {
   margin: 5px 0 0;
   font-size: 14px;
 }
-/* Estilos para dispositivos móviles */
+
+/*RESPONSIVO*/
 @media (max-width: 767px) {
   .servicios {
     grid-template-columns: 1fr;
@@ -247,8 +151,6 @@ textarea.form-control {
     font-size: 14px;
   }
 }
-/* Estilos para dispositivos móviles */
-/* Estilos para dispositivos móviles */
 @media (max-width: 767px) {
   .doctor-grid {
     grid-template-columns: 1fr;
